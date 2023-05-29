@@ -13,7 +13,8 @@
         RowSpacing="0">
         <CollectionView ItemsSource="{Binding Monkeys}"
                          SelectionMode="None"
-                         Grid.ColumnSpan="2">
+                         Grid.ColumnSpan="2"
+                        BackgroundColor="Transparent">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="model:Monkey">
                     <Grid Padding="10">
