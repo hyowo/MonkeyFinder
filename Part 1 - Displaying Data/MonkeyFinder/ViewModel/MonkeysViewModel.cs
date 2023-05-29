@@ -7,7 +7,7 @@ public partial class MonkeysViewModel : BaseViewModel
     public ObservableCollection<Monkey> Monkeys { get; } = new();
     MonkeyService monkeyService;
 
-    public Command GetMonkeysCommand { get;}
+    //public Command GetMonkeysCommand { get;}
 
     [RelayCommand]
     async Task GetMonkeysAsync()
@@ -45,7 +45,6 @@ public partial class MonkeysViewModel : BaseViewModel
     {
         Title = "Monkey Finder";
         this.monkeyService = monkeyService;
-        //GetMonkeysCommand = new Command(async () => await GetMonkeysAsync());
     }
 
 }
