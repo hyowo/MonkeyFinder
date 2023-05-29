@@ -45,7 +45,7 @@ public partial class MonkeysViewModel : BaseViewModel
     {
         Title = "Monkey Finder";
         this.monkeyService = monkeyService;
-        GetMonkeysCommand = new Command(async () => await GetMonkeysAsync());
+        //GetMonkeysCommand = new Command(async () => await GetMonkeysAsync());
     }
 
 }
