@@ -22,6 +22,17 @@
             ItemsSource="{Binding Monkeys}"
             SelectionMode="None">
 
+                    <CollectionView.EmptyView>
+                        <StackLayout Padding="100">
+                            <Image
+                HorizontalOptions="Center"
+                Source="nodata.png"
+                HeightRequest="160"
+                WidthRequest="160"
+                VerticalOptions="Center" />
+                        </StackLayout>
+                    </CollectionView.EmptyView>
+
 
                     <CollectionView.ItemTemplate>
                         <DataTemplate x:DataType="model:Monkey">
