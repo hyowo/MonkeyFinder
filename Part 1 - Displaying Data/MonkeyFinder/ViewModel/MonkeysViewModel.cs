@@ -29,15 +29,11 @@ public partial class MonkeysViewModel : BaseViewModel
         try
         {
             // Get cached location, else get real location.
-            var location = await geolocation.GetLastKnownLocationAsync();
-            if (location == null)
-            {
-                location = await geolocation.GetLocationAsync(new GeolocationRequest
+            var location = await geolocation.GetLastKnownLocationAsync() ?? await geolocation.GetLocationAsync(new GeolocationRequest
                 {
                     DesiredAccuracy = GeolocationAccuracy.Medium,
                     Timeout = TimeSpan.FromSeconds(30)
                 });
-            }
 
             // Find closest monkey to us
             var first = Monkeys.OrderBy(m => location.CalculateDistance(

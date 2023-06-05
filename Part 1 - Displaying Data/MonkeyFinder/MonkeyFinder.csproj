@@ -17,8 +17,10 @@
 		<ApplicationIdGuid>ECD44DAE-B03E-4D8B-B427-71865961E696</ApplicationIdGuid>
 
 		<!-- Versions -->
+		<WindowsPackageType>None</WindowsPackageType>
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
 		<ApplicationVersion>1</ApplicationVersion>
+		<Platforms>AnyCPU;x64</Platforms>
 	</PropertyGroup>
 
 	<ItemGroup>
